@@ -1,0 +1,16 @@
+# KDE env file
+current.env
+
+# K8S environment
+environments/*/kubeconfig
+environments/*/pki
+environments/*/.env
+environments/*/kind-config.yaml
+
+# Project
+environments/*/namespaces/*/*/
+environments/*/namespaces/*/deploy.env
+
+# npm cache
+environments/*/namespaces/*/.npm
+environments/*/namespaces/*/.npmrc
