@@ -1,7 +1,12 @@
 # KDE env file
 current.env
+kde.env
+
+# ngrok env file
+ngrok.env
 
 # K8S environment
+environments/*/.telepresence
 environments/*/kubeconfig
 environments/*/pki
 environments/*/.env
@@ -10,7 +15,7 @@ environments/*/kind-config.yaml
 # Project
 environments/*/namespaces/*/*/
 environments/*/namespaces/*/deploy.env
+environments/*/namespaces/*/gitlab.env
 
-# npm cache
-environments/*/namespaces/*/.npm
-environments/*/namespaces/*/.npmrc
+# tmp files
+*.tmp
