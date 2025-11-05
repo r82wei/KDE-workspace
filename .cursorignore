@@ -1,0 +1,44 @@
+# ngrok env file
+ngrok.env
+
+# cloudflare
+.cloudflared
+
+# code-server
+.code-server
+
+# K8S environment
+environments/*/.telepresence
+environments/*/pki
+
+# Project
+environments/*/namespaces/*/mssql-data/**
+environments/*/namespaces/*/*-pvc
+environments/*/namespaces/*/.cache
+environments/*/namespaces/*/.config
+environments/*/namespaces/*/.npm
+environments/*/namespaces/*/.npmrc
+environments/*/namespaces/*/*.release.tgz
+
+
+# tmp files
+*.tmp
+
+# tar files
+*.tgz
+*.tar
+*.tar.gz
+*.zip
+
+# 額外的 Cursor 特定排除
+**/node_modules/**
+**/.angular/**
+**/dist/**
+**/.git/**
+**/assets/**
+**/*.min.js
+**/*.bundle.js
+**/*.map
+**/*.ttf
+**/*.otf
+

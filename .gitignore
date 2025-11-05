@@ -1,0 +1,37 @@
+# KDE env file
+current.env
+kde.env
+
+# ngrok env file
+ngrok.env
+
+# K8S environment
+environments/*/.telepresence
+environments/*/kubeconfig
+environments/*/pki
+environments/*/.env
+environments/*/kind-config.yaml
+
+# Project
+environments/*/namespaces/*/*/
+environments/*/namespaces/*/deploy.env
+environments/*/namespaces/*/gitlab.env
+environments/*/namespaces/*/*.release.tgz
+environments/*/namespaces/*/release.env
+
+# npm cache
+environments/*/namespaces/*/.npm
+environments/*/namespaces/*/.npmrc
+
+# tmp files
+*.tmp
+
+# tar files
+*.tgz
+*.tar
+
+# cloudflare
+.cloudflared
+
+# code-server
+.code-server
