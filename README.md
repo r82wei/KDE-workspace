@@ -13,6 +13,8 @@ kde-cli 主要功能：
 
 #### [KDE 開發架構說明](./docs/development-architecture.md)
 
+#### [CI/CD 腳本自動產生工具](./docs/cicd-script-generator.md)
+
 ## Requirements
 
 - Linux / MacOS / Windows WSL2
@@ -217,3 +219,5 @@ KDE_MOUNT_NETRC=~/.netrc:~/.netrc
 ### [使用 Cloudflare Tunnel 建立對外網址](./docs/cloudflare-tunnel.usage.md)
 
 ### [使用 code-server(VS Code) Web IDE](./docs/code-server.usage.md)
+
+### [CI/CD 腳本自動產生工具](./docs/cicd-script-generator.md)

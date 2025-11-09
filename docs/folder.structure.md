@@ -14,6 +14,7 @@ environments/
     └─ namespaces/
       └─ <project-name>/    # 專案名稱(K8S namespace 名稱)
         ├─ project.env        # 專案設定檔(包含專案 Repo、開發/部署環境 image 設定，可增加自訂環境變數)
+        ├─ generate-cicd-scripts.md  # CI/CD 腳本產生描述文件（可選，用於 AI Agent 自動產生腳本）
         ├─ pre-build.sh       # CI 前置腳本
         ├─ build.sh           # CI 執行腳本
         ├─ post-build.sh      # CI 後置腳本
@@ -57,6 +58,14 @@ kind 的[設定檔](https://kind.sigs.k8s.io/docs/user/configuration/)。
 ### environments/[k8s-name]/k3d-config.env
 
 k3d 的[設定檔](https://k3d.io/stable/usage/configfile/#config-options)。
+
+### environments/[k8s-name]/namespaces/[project-name]/generate-cicd-scripts.md
+
+CI/CD 腳本產生描述文件（可選），用於描述專案的 CI/CD 需求。AI Agent 會讀取此文件並自動產生對應的 CI/CD 腳本。
+
+- 詳細說明請參考 [CI/CD 腳本自動產生工具使用說明](./cicd-script-generator.md)
+- 模板文件請參考 [generate-cicd-scripts.template.md](./generate-cicd-scripts.template.md)
+- 範例請參考 [generate-cicd-scripts.examples.md](./generate-cicd-scripts.examples.md)
 
 ### environments/[k8s-name]/namespaces/[project-name]/project.env
 
