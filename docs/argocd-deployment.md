@@ -158,7 +158,7 @@ argocd login ${ARGOCD_SERVER} \
   --insecure=${ARGOCD_INSECURE:-false}
 
 # 使用 kubectl 或 helm 產生 YAML，然後透過 ArgoCD 部署
-if [ -f "k8s-manifests/" ]; then
+if [ -d "k8s-manifests/" ]; then
   echo "部署 Kubernetes Manifests..."
   
   # 建立或更新 Application

@@ -726,3 +726,4 @@ helm uninstall loki -n loki
 - 腳本執行順序遵循 KDE CLI 的規範：pre-build.sh → build.sh → post-build.sh → pre-deploy.sh → deploy.sh → post-deploy.sh
 
 ```
+
