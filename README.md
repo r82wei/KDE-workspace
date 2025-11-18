@@ -9,6 +9,8 @@ kde-cli 主要功能：
 - 整合開發工具 (k9s / headlamp / telepresence)
 - 對外公開服務 (Ngrok / Cloudflare tunnel)
 
+#### [工作流程圖](./docs/workflow.md)
+
 #### [Workspace 資料夾結構及檔案說明](./docs/folder.structure.md)
 
 #### [KDE 開發架構說明](./docs/development-architecture.md)
