@@ -30,7 +30,7 @@ options:
 
 ```bash
 # 此範例會將 Cloudflare 產生的隨機網址 proxy 到提示輸入的 url
-kde cloudflare-tunnel service --quick
+kde cloudflare-tunnel url --quick
 
 # 此範例會將 Cloudflare 產生的隨機網址 proxy 到 192.168.0.20 的 8080 port
 kde cloudflare-tunnel url --url http://192.168.0.20:8080 --quick
