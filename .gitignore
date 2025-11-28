@@ -18,6 +18,7 @@ environments/*/namespaces/*/deploy.env
 environments/*/namespaces/*/gitlab.env
 environments/*/namespaces/*/*.release.tgz
 environments/*/namespaces/*/release.env
+environments/*/namespaces/*/.env
 
 # npm cache
 environments/*/namespaces/*/.npm
