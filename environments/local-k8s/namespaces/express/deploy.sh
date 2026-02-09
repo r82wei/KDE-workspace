@@ -51,3 +51,6 @@ kubectl -n ${NAMESPACE} patch deployment example-express --patch "
     }
   }
 }"
+
+
+echo "deployyyyyy"
