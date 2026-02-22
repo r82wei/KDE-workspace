@@ -2,8 +2,8 @@
 
 # Check if namespace exists
 if ! kubectl get namespace "${NAMESPACE}" --no-headers --output=name > /dev/null 2>&1; then
-  echo "Namespace ${NAMESPACE} does not exist"
-  exit 1
+  echo "Namespace ${NAMESPACE} does not exist, creating namespace..."
+  kubectl create ns ${NAMESPACE}
 fi
 
 # preview diff between current and new deployment and print to stdout
