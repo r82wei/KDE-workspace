@@ -1,6 +1,5 @@
 # KDE env file
 current.env
-kde.env
 
 # ngrok env file
 ngrok.env
@@ -11,6 +10,9 @@ environments/*/kubeconfig
 environments/*/pki
 environments/*/.env
 environments/*/kind-config.yaml
+environments/*/k3d-config.yaml
+environments/*/namespaces/*/*.doc
+environments/*/namespaces/*/*.tar
 
 # Project
 environments/*/namespaces/*/*/
@@ -19,6 +21,8 @@ environments/*/namespaces/*/gitlab.env
 environments/*/namespaces/*/*.release.tgz
 environments/*/namespaces/*/release.env
 environments/*/namespaces/*/.env
+environments/*/namespaces/*/.pipeline.env
+
 
 # npm cache
 environments/*/namespaces/*/.npm
@@ -36,3 +40,8 @@ environments/*/namespaces/*/.npmrc
 
 # code-server
 .code-server
+
+# k9s
+k9s/clusters
+k9s/.config
+k9s/.data
